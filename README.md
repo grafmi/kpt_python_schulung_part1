@@ -42,33 +42,12 @@ cd kpt_python_schulung_part1
 
 Oder ohne Git: Auf GitHub oben rechts auf **"Code" → "Download ZIP"** klicken und den Ordner entpacken.
 
-### 5. Virtuelle Umgebung erstellen und Pakete installieren
-
-Im Projektordner (in VS Code über **Terminal → New Terminal**, oder in PowerShell):
-
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-**Falls die Aktivierung mit einem Fehler zur "execution policy" abbricht**, einmalig folgenden Befehl ausführen und danach die Aktivierung wiederholen:
-
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-```
-
-Falls das auf dem KPT-Notebook von der IT gesperrt ist: Stattdessen die **Eingabeaufforderung (cmd)** statt PowerShell verwenden und dort aktivieren:
-
-```cmd
-.venv\Scripts\activate.bat
-```
-
-### 6. Notebook öffnen
+### 5. Notebook öffnen
 
 1. In VS Code den Ordner `kpt_python_schulung_part1` öffnen (**File → Open Folder...**)
 2. Ein Notebook öffnen, z. B. `grundlagen/01_einfuehrung.ipynb`
-3. Oben rechts auf **"Select Kernel"** klicken → **"Python Environments"** → das eben erstellte `.venv` auswählen
+3. Oben rechts auf **"Select Kernel"** klicken → **"Python Environments"**
 4. Zellen mit `Shift + Enter` ausführen
+5. Ev. müssen noch Programmbibliotheken wie matplotlib installiert werden. Dabei unterstütze ich euch.
 
 Fertig – ihr könnt jetzt mit `grundlagen/01_einfuehrung.ipynb` starten.
